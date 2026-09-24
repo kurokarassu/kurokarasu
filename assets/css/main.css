@@ -1335,6 +1335,11 @@ input, select, textarea {
 				line-height: 2;
 			}
 
+		#header nav {
+			width: 38rem;
+			max-width: 100%;
+		}
+
 		#header nav ul {
 			display: -moz-flex;
 			display: -webkit-flex;
@@ -1345,11 +1350,14 @@ input, select, textarea {
 			padding-left: 0;
 			border: solid 1px #ffffff;
 			border-radius: 4px;
+			width: 100%;
 		}
 
 			#header nav ul li {
 				padding-left: 0;
 				border-left: solid 1px #ffffff;
+				width: 25%;
+				flex: 1 1 0px;
 			}
 
 				#header nav ul li:first-child {
@@ -1358,14 +1366,17 @@ input, select, textarea {
 
 				#header nav ul li a {
 					display: block;
-					min-width: 7.5rem;
+					width: 100%;
+					min-width: 0;
 					height: 2.75rem;
 					line-height: 2.75rem;
-					padding: 0 1.25rem 0 1.45rem;
+					padding: 0 0.2rem;
 					text-transform: uppercase;
-					letter-spacing: 0.2rem;
-					font-size: 0.8rem;
+					letter-spacing: 0.08rem;
+					font-size: 0.7rem;
 					border-bottom: 0;
+					text-align: center;
+					white-space: nowrap;
 				}
 
 					#header nav ul li a:hover {
@@ -1482,6 +1493,7 @@ input, select, textarea {
 					#header nav ul li {
 						border-left: 0;
 						border-top: solid 1px #ffffff;
+						width: 100%;
 					}
 
 						#header nav ul li:first-child {
@@ -1659,23 +1671,3 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
-/* FORÇA LARGURA IDÊNTICA PARA OS LADOS ESQUERDO E DIREITO DO MENU */
-#header nav ul {
-    display: flex !important;
-    width: 100% !important;
-}
-
-#header nav ul li {
-    flex: 1 1 0px !important; /* Obriga os 4 botões a terem rigorosamente o mesmo tamanho */
-    width: 25% !important;
-}
-
-#header nav ul li a {
-    min-width: 0 !important;
-    width: 100% !important;
-    padding: 0 0.2rem !important; /* Ajusta o espaço interno para o texto longo caber */
-    text-align: center !important;
-    font-size: 0.7rem !important; /* Reduz ligeiramente a fonte para não estourar a caixa */
-    letter-spacing: 0.08rem !important;
-    white-space: nowrap !important;
-}
