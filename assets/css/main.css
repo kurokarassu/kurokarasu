@@ -1659,4 +1659,23 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+/* FORÇA LARGURA IDÊNTICA PARA OS LADOS ESQUERDO E DIREITO DO MENU */
+#header nav ul {
+    display: flex !important;
+    width: 100% !important;
+}
 
+#header nav ul li {
+    flex: 1 1 0px !important; /* Obriga os 4 botões a terem rigorosamente o mesmo tamanho */
+    width: 25% !important;
+}
+
+#header nav ul li a {
+    min-width: 0 !important;
+    width: 100% !important;
+    padding: 0 0.2rem !important; /* Ajusta o espaço interno para o texto longo caber */
+    text-align: center !important;
+    font-size: 0.7rem !important; /* Reduz ligeiramente a fonte para não estourar a caixa */
+    letter-spacing: 0.08rem !important;
+    white-space: nowrap !important;
+}
