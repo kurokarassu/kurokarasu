@@ -1659,14 +1659,26 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
-#header nav ul li a {
-    min-width: 6.5rem !important;
-    padding: 0 0.5rem !important;
-    font-size: 0.75rem !important;
-    letter-spacing: 0.15rem !important;
+#header nav {
+    width: auto !important;
+    max-width: 100% !important;
 }
 
 #header nav ul {
     display: flex !important;
+    flex-wrap: nowrap !important;
     justify-content: center !important;
+}
+
+#header nav ul li {
+    flex: 1 1 auto !important;
+}
+
+#header nav ul li a {
+    min-width: 0 !important; /* Remove o travamento de largura fixa */
+    width: 100% !important;
+    padding: 0 1rem !important; /* Espaçamento interno proporcional */
+    font-size: 0.75rem !important;
+    letter-spacing: 0.12rem !important;
+    white-space: nowrap !important; /* Impede a quebra de linha do texto */
 }
