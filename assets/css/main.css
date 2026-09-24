@@ -1660,32 +1660,3 @@ input, select, textarea {
 			opacity: 0;
 		}
 
-#header nav.use-middle:after {
-    display: none !important;
-}
-
-#header nav ul {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    border: solid 1px #ffffff !important;
-    border-radius: 4px !important;
-}
-
-#header nav ul li {
-    border-left: solid 1px #ffffff !important;
-}
-
-#header nav ul li:first-child {
-    border-left: 0 !important;
-}
-
-#header nav ul li.is-middle {
-    border-left: solid 1px #ffffff !important;
-}
-
-#header nav ul li a {
-    min-width: 0 !important;
-    padding: 0 1rem !important;
-    white-space: nowrap !important;
-}
