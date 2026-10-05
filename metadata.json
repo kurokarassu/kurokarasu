@@ -1,6 +1,0 @@
-{
-  "name": "Kuro Karasu - Aulas de Japonês",
-  "description": "Aulas particulares de japonês com método de imersão em conteúdos nativos (animes, mangás, literatura e jogos), acompanhamento individual e revisão flexível com Anki ou tarefas tradicionais.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
